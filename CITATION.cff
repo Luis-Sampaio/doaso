@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: Please cite this software using these metadata.
+title: DoaSô
+authors:
+  - family-names: de Oliveira Souza
+    given-names: Guilherme
+  - family-names: Maia Moreira Fernandes
+    given-names: Igor
+  - family-names: Henrique Sampaio Vieira
+    given-names: Luis 
+  - family-names: Moreira de Queiroz
+    given-names: Thiago 
+  - family-names: Schneider do Vale
+    given-names: Victor 
+  - family-names: Prates de Souza Lima
+    given-names: Vitor 
+  - family-names: Madureira Matos
+    given-names: Gabriel
+  - family-names: Leonardo Machado Miranda
+    given-names: Wendell
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália 
+
+keywords:
+    - Doação
+    - Ajuda
+    - Conectividade
+repository-code: https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2024-2-p2-tiapn-doaso/tree/main
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-08-01

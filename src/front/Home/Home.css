@@ -1,0 +1,309 @@
+:root {
+    /* Definindo cores primárias e secundárias, cor dos botões e cores de fundo */
+    --cor-primaria: #284854;
+    --cor-secundaria: #8BC441;
+    --cor-btn: #4FEB4F;
+    --cor-branco: white;
+    --cor-preto: #000000;
+}
+
+html,
+body {
+    /* Definindo altura total e eliminando margem padrão */
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* Centralizando o conteúdo vertical e horizontalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; /* Removendo scroll horizontal */
+}
+
+.configWrapper {
+    /* Estilo para a barra de configuração com cor de fundo primária */
+    background-color: var(--cor-primaria);
+    height: 0;
+}
+
+.background-1 {
+    /* Fundo de tela 1 com cor primária e ocupando toda a altura */
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    width: 100%;
+}
+
+.textoCentral {
+    /* Configuração para centralizar texto e imagem da tela 1 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-inline: 10%;
+    padding-top: 17%;
+    max-height: 60%;
+}
+
+.titulo h1 {
+    /* Estilo do título principal com cor secundária */
+    color: var(--cor-btn);
+    font-size: 600%;
+}
+
+.subtitulo h2 {
+    /* Estilo do subtítulo com cor branca */
+    color: var(--cor-branco);
+    font-size: 150%;
+}
+
+.imgCentralItem {
+    /* Dimensões da imagem central */
+    width: 27vw;
+    height: 50vh;
+}
+
+.background-2 {
+    /* Fundo da segunda tela com cor secundária */
+    background-color: var(--cor-secundaria);
+    height: 100vh;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoCentralTela2 {
+    /* Configuração para centralizar o texto da tela 2 */
+    display: flex;
+    align-items: center;
+}
+
+.pt1 {
+    /* Cor do primeiro título */
+    color: var(--cor-primaria);
+}
+
+.pt2 {
+    /* Cor do segundo título */
+    color: var(--cor-branco);
+}
+
+.subTexto {
+    /* Espaço superior para subtítulo */
+    padding-top: 5vh;
+}
+
+.imgsTela2 {
+    /* Organização das imagens na tela 2 */
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgsTela2 .imgCentralItem {
+    /* Dimensões das imagens na tela 2 */
+    width: 25vw;
+    height: 50vh;
+}
+
+.background-3 {
+    /* Altura do fundo da terceira tela */
+    height: 220vh;
+    width: 100%;
+}
+
+.background-3 .textoCentral3 .titulo .comoFunciona {
+    /* Estilo do título "Como Funcionamos?" */
+    font-size: 75px;
+}
+
+.textoCentral3 {
+    /* Margem para alinhar o texto da tela 3 */
+    margin-left: 30vw;
+    padding-top: 5%;
+    padding-bottom: 80px;
+}
+
+.numeracaoContainer {
+    /* Alinhamento dos itens numerados */
+    display: flex;
+    width: 40vw;
+    margin-left: 20vw;
+}
+
+.numeracaoInstrucoes {
+    /* Opacidade para instruções numeradas */
+    opacity: 0.5;
+}
+
+.tituloInstrucoes {
+    /* Cor do título das instruções */
+    color: var(--cor-secundaria);
+}
+
+.textoInstrucoes {
+    /* Cor do texto explicativo */
+    min-width: 40vw;
+    color: var(--cor-preto);
+}
+
+.subTextoInstrucoes {
+    /* Espaçamento superior para as instruções */
+    padding-top: 15%;
+}
+
+.numeracaoContainer .img1 .imgCentralItem {
+    /* Dimensões das imagens nas instruções */
+    margin: 2vw;
+    width: 25vw;
+}
+
+.textoMissao {
+    /* Espaçamento superior para o texto da missão */
+    padding-top: 15%;
+}
+
+.background-4 {
+    /* Estilo do fundo da quarta tela */
+    background-color: var(--cor-secundaria);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-4 h1 {
+    /* Margem para o título na quarta tela */
+    margin: 30px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .textoCentral {
+        /* Ajuste para layout em telas menores */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        /* Reduzindo o tamanho do título em telas menores */
+        font-size: 400%;
+    }
+
+    .imgCentralItem {
+        /* Ajuste das dimensões da imagem central */
+        margin-top: 20px;
+        width: 40vw;
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .img1 {
+        /* Ocultando imagens menores para economia de espaço */
+        display: none;
+    }
+
+    .imgsTela2 .imgCentralItem:nth-child(n+2) {
+        /* Mostrando apenas uma imagem na tela 2 */
+        display: none;
+    }
+
+    .imgsTela2 .imgCentralItem {
+        /* Ajuste de tamanho das imagens restantes */
+        height: 40vh;
+        width: 40vw;
+    }
+
+    .background-3 .textoCentral3 .titulo .comoFunciona {
+        /* Redução do tamanho da fonte */
+        font-size: 250%;
+        margin-top: 5vh;
+    }
+
+    .instrucoes {
+        /* Ajuste para exibição em coluna */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .numeracaoContainer {
+        /* Ajuste de largura para elementos numerados */
+        width: 70vw;
+    }
+
+    .textoCentral3 {
+        /* Ajustando margem para centralização */
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    .nossaMissao {
+        /* Ajuste de largura da seção de missão */
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .background-3 {
+        /* Ajuste da altura do fundo */
+        height: 150vh;
+    }
+
+    .configWrapper {
+        /* Ajuste de altura para a barra de configuração */
+        height: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .textoCentral {
+        /* Configurações para telas menores */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        /* Tamanho do título reduzido */
+        font-size: 400%;
+    }
+
+    .imgCentralItem {
+        /* Ajuste das dimensões da imagem central */
+        margin-top: 20px;
+        width: 35vw;
+        height: 20vh;
+    }
+
+    .imgsTela2 {
+        /* Organização das imagens em coluna */
+        flex-direction: column;
+        padding-top: 2vh;
+    }
+
+    .imgsTela2 .imgCentralItem {
+        /* Ajuste das dimensões das imagens */
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .textoCentral3 {
+        /* Centralização do texto para telas menores */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    h1, h2, h3, h4{
+        font-size: 100%;
+    }
+}

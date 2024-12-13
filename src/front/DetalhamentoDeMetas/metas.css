@@ -1,0 +1,178 @@
+:root {
+    /* Definindo cores primárias e secundárias, cor dos botões e cores de fundo */
+    --cor-primaria: #284854;
+    --cor-secundaria: #8BC441;
+    --cor-btn: #4FEB4F;
+    --cor-branco: white;
+    --cor-preto: #000000;
+}
+
+html,
+body {
+    /* Definindo altura total e eliminando margem padrão */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    /* Centralizando o conteúdo vertical e horizontalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; /* Removendo scroll horizontal */
+}
+
+
+.configBar {
+    height: 15vh;
+}
+
+.sessaoEsq{
+    width: 60vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 5vw;
+}   
+
+.imgDoacaoItem{
+    width: 30vw;
+    height: 60vh;
+    margin-top: 4vh;
+    border-radius: 20px;
+}
+
+.dadosCentro{
+    display: flex;
+}
+
+.imgCentroItem{
+    width: 5vw;
+}
+
+.nome, .localizacao{
+    font-size: 100%;
+}
+
+.verPerfil{
+    margin-inline-start: 22vw;
+    padding-top: 25px;    
+}
+
+.background-1{
+    display: flex;
+}
+
+.sessaoDir{
+    background-color: var(--cor-primaria);
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.elementosDir{
+    margin-inline-start: 2vw;
+}
+.tituloItem{
+    color: var(--cor-btn);
+    font-size: 30px;
+    padding-top: 40px;
+}   
+.progress{
+    width: 20vw;
+    height: 2.5vh;
+    margin-inline-start: 5vw;
+}
+
+.contribuir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contribuirBtn{
+    margin-top: 40px;
+}
+
+.progress-bar{
+    background-color: var(--cor-btn);
+}
+
+.pt2{
+    color: var(--cor-btn);
+}
+.maisDoacoes{
+    padding: 60px;
+}
+
+@media (max-width: 1024px) {
+    
+    .imgsTela2 .imgCentralItem:nth-child(n+2) {
+        /* Mostrando apenas uma imagem na tela 2 */
+        display: none;
+    }
+
+    .imgsTela2 .imgCentralItem {
+        /* Ajuste de tamanho das imagens restantes */
+        height: 40vh;
+        width: 80vw;
+    }
+    .sessaoDir, .sessaoEsq{
+        height: 100vh;
+    }
+    .sessaoDir{
+        background-color: var(--cor-branco);
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sessaoEsq, .sessaoDir {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .imgDoacaoItem {
+        width: 90vw;
+        height: auto;
+    }
+
+    .dadosCentro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgCentroItem {
+        width: 20vw;
+    }
+
+    .verPerfil {
+        margin-inline-start: 0;
+        padding-top: 15px;
+    }
+
+    .elementosDir {
+        margin-inline-start: 10px;
+    }
+
+    .tituloItem {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .progress {
+        width: 80%;
+        margin-inline-start: 10%;
+    }
+
+    .background-1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
